@@ -1,0 +1,52 @@
+{
+  "use_orthanc": false,
+  "orthanc": {
+    "url": "http://localhost:8042",
+    "username": "orthanc",
+    "password": "orthanc",
+    "orthanc_import_path": "",
+    "max_workers": 10
+  },
+  "dicom_server": {
+    "station_name": "YOUR_STATION_NAME",
+    "aet": "YOUR_APPLICATION_ENTITY_TITLE",
+    "ip": "your.pacs.server.ip",
+    "port": 11112
+  },
+  "google": {
+    "spreadsheet_id": "YOUR_SPREADSHEET_ID",
+    "drive_folder_id": "YOUR_DRIVE_FOLDER_ID",
+    "credentials_file": "credentials.json",
+    "token_file": "token.json"
+  },
+  "email": {
+    "enable_notifications": false,
+    "sender_email": "your-email@gmail.com",
+    "admin_email": "admin@example.com",
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "use_tls": true,
+    "smtp_username": "your-email@gmail.com",
+    "smtp_password": "your-app-password"
+  },
+  "directories": {
+    "downloads": "./downloads",
+    "processing": "./processing",
+    "logs": "./logs"
+  },
+  "local_drive": {
+    "monitor_folder": "./monitor",
+    "auto_delete_after_processing": true
+  },
+  "processing": {
+    "max_retry_attempts": 1,
+    "retry_delay_seconds": 30,
+    "verification_timeout_minutes": 10,
+    "cleanup_old_files_days": 7
+  },
+  "logging": {
+    "level": "INFO",
+    "max_file_size_mb": 10,
+    "backup_count": 5
+  }
+}
